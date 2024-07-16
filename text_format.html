@@ -1,0 +1,97 @@
+<!-- HTML TEXT FORMATING -->
+<!-- HTML Formating involves enhacing the visual presentaion of text. It enables text maniplationg for improved aesthetrics, elimination the need for CSS. Various formating tags within HTML faciliate techniqes such as bold, italics, and underline, enhacing the text's visual prominence and emphasis. -->
+
+<!-- Bold and Italic: -->
+<!-- <strong>:- Represents strong important. Text inside this tag is typically display in bold. 
+<em>:- Represents emphasizedtext. Text inside the tag is usually displayed in italics.-->
+
+<!-- Underline and Strikethrough -->
+<!-- <u>:-Represents underline text.
+<s>:-Represents strikethrough text (crossed out).  -->
+
+<!-- Subscript and Superscript -->
+<!-- <sub>:-Represents subscript text (lower and smaller).
+<sup>:-Represts superscript text (upper and smaller). -->
+
+<!-- Preformatted Text -->
+<!-- <pre>:-Represents preformatted text, preserving spaces and line breaks.
+<kbd>:-The <kbd> tag represents keybord input, indicating that the enclosed content should be treated as something a user would type on a keyboard. It is often used to show examples of keybord commands or shorcuts.
+<abbr>:-The <abbr> tag stands for "abbreviation" and is used to mark up abbreviation or acronyms in your content. -->
+
+<!-- <mark> Tag -->
+<!-- The <mark> tag is used to highlight or mark a portion of text to draw attentio to it. It typically results in a yellow background color behind the marked text, making it stand out visually. -->
+
+<!-- <small> Tag -->
+<!-- The <small> tag is used to indicate that the enclosed text should be displayed in a smaller font size. It's often used for fine print, legal disclaimers, or less important information. -->
+
+<!-- <del> Tag -->
+<!-- The <del> tag is used to represent deleted or removed text in a document. Browser typically render the text with a strik-though line to indicate that it has been deleted. -->
+
+<!-- Inline Styles -->
+<!-- You can use inline CSS styles to apply formatting directly to specific text elements. -->
+
+
+
+
+
+<!-- CODE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Text Format</title>
+    <!-- internal css -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+        html{
+            font-family: "Pppins", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>This is <b>important</b> and <em>emphasis</em> text.</p>
+    <hr>
+    <p>I <s>don't</s> <u>love</u> coding🥰</p>
+    <hr>
+    <p>Chemical formula of Glucose 👉 C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> and (a+b)<sup>2</sup> 👉 a<sup>2</sup>+b<sup>2</sup>+2ab</p>
+    <hr>
+    <p>
+        <pre>
+            To
+            The Program Manager Ajay Sinha,
+            NavGuruku Pune Maharastra
+            Date: 8 july 2024.
+
+            Subject: Leave Applicatio for two days.
+
+            Respected Ajay 
+            With due Respect, I beg to say that I am a SOP student of your campus.From Last nigth I have fever because of that I am not able to continue my study. 
+            I want to go to the Doctor.I am requesting you to please grant me two days leave.
+            
+            I hope you will consider my application. I will definitely try to remain present after two days.
+
+            Thank you🌼
+            Yours obediently
+            Name Dular Pandey
+            class - SOP 
+        </pre>
+    </p>
+    <hr>
+    <p>If you want to copy this code, press 👉 <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+    <hr>
+    <p><abbr title="World Health Organizaion">WHO</abbr> is an internatonal organization.</p>
+    <hr>
+    <p>Highlight <mark>this taxt</mark> to emphasize it.</p>
+    <hr>
+    <p>I am the <small>youngest</small> child of my parents.</p>
+    <hr>
+    <p>I am <del>18</del> 17 years old.</p>
+    <hr>
+    <!-- inline css -->
+    <p style="color: red;">
+        I am a hacker😈 and I love hacking.💀
+    </p>
+</body>
+</html>

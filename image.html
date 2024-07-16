@@ -1,0 +1,87 @@
+<!-- HTML IMAGE TAG -->
+
+<!-- TODO Deprecated Attributes of HTML Images 
+(align, border, hspace, vspace) - we cannot use this attribute. --> 
+
+
+<!-- INTERVIEW QUESTIONS -->
+<!-- 1. How would you make an image responsive using the width attribute?
+ANS - You can set the width attribute to s percentage value(exampl - width="100%") to make the image adjust its width based on the available space. -->
+
+<!-- 2. How do you create an image link using the <img> tage? 
+ANS - You wrap the <img> tag with an anchor <a> tag and provide the href attribute in the <a> tag. -->
+
+<!-- 3. What is the difference between relative and absolute URL in the href attribute? 
+ANS - Relative URLs are URLs that are relative to the current page's URL.
+      Absolute URLs are complete URLs, including the protocol (http/https) and domain.-->
+
+<!-- 4.Why is providing  descriptive alt text for images important? It improves 
+ANS - Accessibility for users with visual impairments and helps search engines. -->    
+
+
+
+
+
+<!-- Void Elements...
+1. <are> = Defines a clickable area within an image map.
+2. <br> = Represent a line break.
+3. <col> = Specifies column properties for a table column group.
+4. <embed> = Embeds external content or plugin content.
+5. <hr> = Represent a thematic break or horizontal rule.
+6. <img> = Embeds an image.
+7. <input> = Represents an input field.
+8. <link> = Specifies relationships between a current document and external resources.
+9. <meta> = Provides metadata about the html document.
+10. <param> = Defines parameters for plugins.
+11. <sources> = Specifies multiple media resources for media elements like <video>.
+12. <tracks> = Specifies text tracks for media elements.
+13. <wbr> = Represents a word break opportunity in text. -->
+
+
+
+
+<!-- CODE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML IMAGE TAG</title>
+    <style>
+        @import url("hack.jpeg");
+        html{
+            font-family: "jost", sans-serif;
+            font-weight: bold;
+            text-align: center; 
+            background-color: brown;
+        }
+        img{
+            /* max-width: 250; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://i.pinimg.com/736x/79/3b/b0/793bb0d8845f9a44f922b1903fb94c58.jpg" target="_blank">
+     <img src="./hack.jpeg" alt="my html course thumbnail" width="600px" height="400px" title="hacke image">\
+    <!-- <img src="./hack.jpeg" alt="my html course thumbnail" width="100%" height="auto" title="hacke image"> -->
+    </a>
+
+    <img
+    src="hack.jpeg" 
+    alt="Clickable World Map"
+    usemap="#map"
+    width="600"
+    height="400">
+
+    <map name="map">
+        <area 
+        shape="rect"
+        coords="0,0,600,400"
+        href="https://youtu.be/q7vHHfKzUjA?si=DKICCLbQOOB9egrn" 
+        alt="Real Life" target="_blank">
+
+    </map>
+</body>
+</html>

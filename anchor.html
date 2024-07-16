@@ -1,0 +1,104 @@
+<!-- HTML ANCHOR TAG -->
+<!-- The anchor <a> tag defines a hyperlink, which is used to link from one page to another. -->
+
+<!-- HTML ANCHOR ATTRIBUTES -->
+<!-- <href>:- Specifies the URL or destination the link points to. -->
+
+<!-- <target>:- Specifies where the linked content will be displayed (example:- _blank for a new window/tab). -->
+
+<!-- <download>:- Suggests that the target will be the downloaded when clicked. -->
+
+<!-- <rel>:- Describes the relationship between the current page and the linked page. -->
+
+<!-- <title>:- Provides additional information when overing over the link. -->
+
+<!-- <id>:- Assigns a unique indentifier to the anchor for linking within the page. -->
+
+<!-- <class>:- Assigns a class for styling or javascript interaction. -->
+
+<!-- <style>:- Applied inline CSS styling to the anchor. -->
+
+<!-- <tabindex>:- Specifies the tab order when navigating using the keyboard. -->
+
+<!-- <accesskey>:- Defines a keyboard shortcut to activate the link. -->
+
+<!-- <aria>:- Attributes for accessibility purposes (example:- aria-label). -->
+
+
+
+<!-- INTERVIEW QUESTIONS -->
+<!-- 1. How can you create a link within the same webpage that takes the user to a specific section or element on the page? -->
+<!-- ANS - To the create a link that takes the user to a specific section or elements within the same webage, you can use the anchor(a) tag's href attribute  -->
+
+<!-- 2. What is the difference between relative and absolute URLs in the href attribute? -->
+<!-- ANS - Relative URLs that are relative to the current page's URL. Absolute URLs are complete URL, including the protocol (http/https). -->
+
+<!-- 3. How does the download attribute work in the anchor tag? -->
+<!-- ANS - The download attribute suggests that the linked resource should be downloaded instead of navigated to, prompting the user to download the file. -->
+
+<!-- 4. How do you create an HTML link that open the user's defult email client with a specific email adress? -->
+
+<!-- 5. How can you create a clickable link in HTML that allows user to directly initiate a phone call when clicked? -->
+<!-- ANS - To create a link that enables to initiate a phone call when clicked, you can use the anchor tag's href attribute with the tel: protocol. -->
+
+ 
+
+
+<!-- CODE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ANCHOR TAG</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.linkedin.com/feed/" target="_blank" title="click now to Follow" id="Pandey" class="SOP">Follow me on linkedin</a>
+    <hr>
+
+    <a href="#about_hackers">know more about hackers</a><br>
+    <hr>
+
+    <!-- relative -->
+    <a href="hacker.jpeg" download>Download this hacker image</a>
+    <hr>
+
+    <a href="mailto:dularpandey24@navgurukul.org">Send email to Dular Pandey</a>
+    <hr>
+
+    <a href="tel:+918102849704">Call Me</a>
+    <hr>
+
+    <a href="https://www.youtube.com/"> &lt;Youtube&gt;</a>
+    <hr>
+
+    <!-- absolute -->
+    <!-- <a href="/home/ng/Downloads/360_F_556291020_q2ieMiOCKYbtoLITrnt7qcSL1LJYyWrU.jpg" download>Download this hacker image</a>
+    <hr> -->
+
+    <!-- <a href="mailto:pandeydular39@gmail.com">Send email to Dular Pandey</a> -->
+
+    <h1>About Coders</h1>
+    <p>Coders are professionals who write and develop software programs by using various programming languages. They transform ideas and requirements into functional code, creating applications, websites, and systems that power modern technology. With a focus on problem-solving and logical thinking, coders play a crucial role in advancing innovation and enabling digital solutions across industries.</p>
+    <hr>
+
+    <h1>Know More About Coders</h1>
+    <p>Coders, also known as programmers or software developers, are integral to the technology landscape. They collaborate with designers, analysts, and other stakeholders to build software that meets user needs and business objectives</p>
+    <hr>
+
+    <h1>About Hackers</h1>
+    <p>A hacker is a skilled individual who uses their technical knowledge to exploit weaknesses in computer systems or networks. While some hackers engage in malicious activities for personal gain, others, known as ethical hackers or white hats, work to identify and fix security vulnerabilities. The hacker culture emphasizes creativity, problem-solving, and a deep understanding of technology.</p>
+    <hr>
+
+    <h1 id="about_hackers">Know More About Hackers</h1>
+    <p>Black hat hackers, on the other hand, exploit vulnerabilities for malicious purposes, such as stealing data, causing disruptions, or financial gain. Their activities are illegal and can lead to significant damage to individuals and organizations. These hackers use a variety of techniques, including malware, phishing, and denial-of-service attacks, to achieve their objectives.</p>
+    <hr>
+
+</body>
+</html> 

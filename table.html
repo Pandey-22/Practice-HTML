@@ -1,0 +1,172 @@
+<!-- HTML TABLE TAG -->
+<!-- The <table> HTML element represents tabular data - that is information presented in a two-dimensional table comprised of rows and columns or cells containing data. -->
+
+
+
+
+
+<!-- LIST OF DEPRECATED TAGS -->
+<!-- <table align="..."> = Used to horizontally align the table within its containig element. -->
+
+<!-- <tr align="..."> = Used to horizontally align the content of a table row. -->
+
+<!-- <td align="..."> = Used to horizontally align the content of a table cell. -->
+
+<!-- <th align="..."> = Used to horizontally align the content of a table header cell. -->
+
+<!-- <bgcolor="..."> = Used to set the background color of a table, row, or cell. -->
+
+<!-- border="..."> = Used to define the border width of a table.-->
+
+<!-- <frame="..."> = Used to specify whether a table should have outer frames. -->
+
+<!-- <rules="..."> = Used to define the presence and types of horizontal and vertical rules within a table. -->
+
+<!-- <width="..."> Used to set the width of a table, row, or cell. cellspacing & cellpadding for the cell padding and outer spacing.-->
+
+
+
+
+
+
+<!-- INTERVIEW QUESTIONS -->
+
+<!-- 1. What is the purpose of the <thead>, <tbody>, and <tfoot> elements within a table?
+ANS -  -->
+
+<!-- 2. How can you create table using the <th> element? How is it different from using <td> for data cells?
+ANS -    -->
+
+<!-- 3. What is the significance of the colspan and rowspan attribute in table cells? Provide an example. -->
+
+
+
+
+
+
+<!-- CODE -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE TAG</title>
+    <style>
+        html{
+            font-family: "jost", sans-serif;
+            background-color: #efefef;
+        }
+        table{
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Table Tags</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>username</th>
+                <th>password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>Pandey-22</td> 
+               <td>pandeyji@22</td>
+            </tr>
+            <tr>
+                <td>dularpandey24</td> 
+                <td>dularpandey24@</td>
+            </tr>
+            <tr>
+                <td>pandeydular39</td> 
+                <td>pandey39@</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"> conut row:4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE TAG</title>
+    <style>
+        html{
+            font-family: "jost", sans-serif;
+            background-color: #efefef;
+        }
+        table{
+            text-align: center;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Table Tags</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="8">Time Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Games</td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                <td>Sun</td>
+            </tr>
+            <tr>
+                <td>Foot-Ball</td>
+                <td>Kho-Kho</td>
+                <td>Kabbaddi</td>
+                <td>Pillo-Game</td>
+                <td>Antakshari</td>
+                <td>Barf-Pani</td>
+                <td>Free-Fire</td>
+            </tr>
+            <tr>
+                <th colspan="7">Next Week</th>
+            </tr>
+            <tr>
+                <td>Bat-Ball</td>
+                <td>Lukka-Chhupi</td>
+                <td>Rang-Birang</td>
+                <td>Musician-Game</td>
+                <td>Volley-Ball</td>
+                <td>Dancing</td>
+                <td>Free-Fire</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

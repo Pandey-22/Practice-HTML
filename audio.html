@@ -1,0 +1,44 @@
+<!-- HTML AUDIO TAG -->
+<!-- Audio(<audio>) - The <audio> element is used to embed audio content in a webpage. It supports various audio formats and provides controls for playback. -->
+
+
+
+<!-- List of Attributes -->
+<!-- 
+controls - Adds playback controls(play, pause, volume, etc.).
+autoplay - Starts playback automatically.
+loop - Repeats the media indefinitely.
+preload - Specifies if the media should be loaded when the page loads.
+poster - Display an image before the media loads. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML AUDIO TAG</title>
+    <style>
+        html{
+            font-family: "jost",sans-serif;
+            background-color: #efefef;
+        }
+        h1{
+            font-weight: bold;
+        }
+        audio{
+            box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+            border-radius: 25px;
+        }
+    </style>
+</head>  
+<body>
+    <h1>HTML Audio Tag</h1> 
+    <audio controls autoplay muted>
+        <source src="./audio/audio_thapa.mp3">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
